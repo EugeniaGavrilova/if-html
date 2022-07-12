@@ -13,7 +13,6 @@
     <a href="about/index.html">Об авторе</a>
     <hr />
     <img src="img/cat.jpg" alt="funny cat" />
-    <list>
       <ol>
         <li>
           Знакомство с Web
@@ -49,7 +48,6 @@
           </ul>
         </li>
       </ol>
-    </list>
     <table border="1" width="50%">
       <thead>
         <tr>
@@ -97,7 +95,7 @@
     <form method="get" action="/about">
       <fieldset>
         <legend>My first form</legend>
-        <p>
+        <div>
           <label for="name">Name</label> <br />
           <input
             name="name"
@@ -106,16 +104,16 @@
             placeholder="Your name"
             required
           />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="email">Email</label> <br />
           <input name="email" type="email" id="email" required />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="password">Password</label> <br />
           <input name="password" type="password" id="password" required />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="Level">Your programming level</label> <br />
           <input
             name="Level"
@@ -125,7 +123,7 @@
             max="10"
             value="3"
           />
-        </p>
+        </div>
         <div>What does HTML stand for?</div>
         <br />
         <input name="html-1" type="checkbox" id="html-1" />
@@ -143,7 +141,7 @@
         <label for="http-2">Hyper Text Transmission Protocol</label> <br />
         <input id="http-3" name="http" type="radio" value="3" />
         <label for="http-3">Hyper Text Transfer Protocol</label>
-        <p>
+        <div>
           <label for="comment">Comment</label> <br />
           <textarea
             maxlength="500"
@@ -151,8 +149,8 @@
             name="comment"
             id="comment">
           </textarea>
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="HTML">What does HTML stand for?</label> <br />
           <select name="HTML" id="HTML">
             <option disabled selected>Your answer</option>
@@ -160,7 +158,7 @@
             <option value="2">Hyper Text Markup Language</option>
             <option value="3">Hyper Transfer Markup Leasing</option>
           </select>
-        </p>
+        </div> <br>
         <button>Send</button>
       </fieldset>
     </form>
