@@ -1,0 +1,76 @@
+@import url("./fonts.css");
+* {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.container {
+  max-width: 1223px;
+  margin: 0 auto;
+}
+.offer .container {
+  padding: 120px 0 122px;
+}
+.offer-title {
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.offer-title.stripe {
+  padding-top: 20px;
+}
+.offer-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  font-size: 24px;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block .text {
+  padding: 48px 0 8px;
+}
+.footer {
+  background-color: #10367c;
+}
+.footer .container {
+  padding: 120px 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer .bold {
+  font-weight: 500;
+}
+.item div:not(:last-child) {
+  margin-bottom: 24px;
+}
+.footer .rights {
+  padding-top: 64px;
+  font-size: 14px;
+}
