@@ -74,7 +74,7 @@ h2 {
   font-size: 14px;
 }
 .top-section {
-  background-image: url("./img/top-section.svg");
+  background-image: url("./image/top-section.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
