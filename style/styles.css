@@ -10,15 +10,16 @@
   margin: 0 auto;
 }
 .top-section {
-  background-image: url("../img/top-section.svg");
+  background-image: url("../image/top-section.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
-  max-height: 100vh;
+  /*background-position: center;*/
+  color: #ffffff;
 }
 .top-section .container {
-  padding: 51px 0 120px;
+  padding-top: 51px;
+  min-height: 100vh;
 }
 .nav {
   display: flex;
@@ -32,27 +33,27 @@
 .top-section .text {
   position: relative;
 }
-.top-section-stripe {
+.top-section .text::after {
   position: absolute;
-  width: 50px;
+  content: "";
   height: 4px;
-  margin-left: 765px;
-  background-color: #f5bd41;
+  width: 50px;
+  background: #f5bd41;
+  bottom: -20px;
+  left: 0;
 }
 .main-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 0 196px;
+  padding: 120px 0;
   max-width: 1223px;
   margin: 0 auto;
 }
 .form-main-text {
   font-size: 50px;
   font-weight: 500;
-  width: 542px;
-  height: 118px;
   align-self: flex-start;
 }
 .form-label-text {
@@ -65,15 +66,10 @@
 }
 .form-text {
   font-size: 18px;
-  color: #ffffff;
 }
 .form {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
   background-color: #ffffff;
-  width: 1223px;
-  height: 64px;
   border-radius: 8px;
 }
 input {
@@ -113,7 +109,7 @@ input::-webkit-input-placeholder {
   justify-content: center;
   align-items: center;
   gap: 17px;
-  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .offer .container {
   padding: 120px 0 122px;
