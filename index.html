@@ -6,34 +6,29 @@
     <title>Title</title>
   </head>
   <body>
-    <div class="top-section">
+    <div class="header">
       <div class="container">
-        <div class="nav">
-          <div class="logo">
+        <nav class="nav">
+          <div class="header__logo">
             <img src="./image/logo-vector.png" alt="logo" />
           </div>
-          <div class="top-stripe">
-            <h3 class="top-section text">Stays</h3>
-          </div>
-          <div>Attractions</div>
-          <div>
+          <button class="header__button text">Stays</button>
+          <button class="header__button">Attractions</button>
+          <button class="header__button">
             <img src="./image/night.png" alt="nigth mode" />
-          </div>
-          <div>
+          </button>
+          <button class="header__button">
             <img src="./image/accountc-circle.png" alt="account" />
-          </div>
-        </div>
-        <div class="top-section-stripe">  </div>
+          </button>
+        </nav>
         <div class="main-form">
-          <div class="form-main-text">
-            Discover stays to live, work or just relax
-          </div>
-          <div class="form-label-text">
-            <div class="form-text">Your destination or hotel name</div>
-            <div class="form-text">Check-in — Check-out</div>
+          <div class="main-form__text">
+            <div class="main-form__text_text">Discover stays</div>
+            <div class="main-form__text_text">to live, work or just relax</div>
           </div>
           <form>
             <div class="form">
+              <label class="label__text_input" for="destination">Your destination or hotel name</label>
               <input
                 type="text"
                 placeholder="New York"
@@ -41,6 +36,7 @@
                 id="destination"
                 class="form-text-input"
               />
+              <label class="label__date_input" for="date">Check-in — Check-out</label>
               <input
                 type="text"
                 placeholder="Tue 15 Sept — Sat 19 Sept"
@@ -57,13 +53,13 @@
               <button type="submit" class="button">Search</button>
             </div>
           </form>
-          <div class="top-section download">
-            <div class="google">
+          <div class="header__download">
+            <button>
               <img src="./image/google-play.png" alt="Google play" />
-            </div>
-            <div class="appstore">
+            </button>
+            <button>
               <img src="./image/app-store.svg" alt="App store" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
