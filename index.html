@@ -26,26 +26,32 @@
         <div class="main-form">
           <div class="form-main-text">Discover stays</div>
           <div class="form-main-text">to live, work or just relax</div>
-          <div class="form-label-text">
-            <div class="form-text">Your destination or hotel name</div>
-            <div class="form-text">Check-in — Check-out</div>
-          </div>
           <form>
             <div class="form">
-              <input
-                type="text"
-                placeholder="New York"
-                name="destination"
-                id="destination"
-                class="form-text-input"
-              />
-              <input
-                type="text"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-                name="date"
-                id="date"
-                class="form-date-input"
-              />
+              <div class="form__input_label">
+                <label class="label__text_input" for="destination"
+                  >Your destination or hotel name</label
+                >
+                <input
+                  type="text"
+                  placeholder="New York"
+                  name="destination"
+                  id="destination"
+                  class="form-text-input"
+                />
+              </div>
+              <div class="form__input_label">
+                <label class="label__date_input" for="date"
+                  >Check-in — Check-out</label
+                >
+                <input
+                  type="text"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                  name="date"
+                  id="date"
+                  class="form-date-input"
+                />
+              </div>
               <input
                 name="rooms"
                 placeholder="2 Adults — 0 Children — 1 Room"
