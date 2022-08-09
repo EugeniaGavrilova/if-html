@@ -15,7 +15,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /*background-position: center;*/
   color: #ffffff;
 }
 .top-section .container {
@@ -26,15 +25,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  row-gap: 48px;
 }
-.logo {
+.nav__logo {
   text-align: left;
-  flex-basis: 684px;
+  flex-basis: 800px;
 }
-.top-section .text {
+.nav__icons--text {
   position: relative;
 }
-.top-section .text::after {
+.nav__icons--text::after {
   position: absolute;
   content: "";
   height: 4px;
@@ -43,28 +43,37 @@
   bottom: -20px;
   left: 0;
 }
+.nav__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.top-section__info {
+  align-self: flex-start;
+  padding-top: 196px;
+}
+.top-section__info--text {
+  font-size: 50px;
+  font-weight: 500;
+}
 .main-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 0;
-  max-width: 1223px;
+  width: 100%;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
-.form-main-text {
-  font-size: 50px;
-  font-weight: 500;
-  align-self: flex-start;
-}
-.form-text {
-  font-size: 18px;
-}
-.form {
+.main-form__form {
   display: flex;
+  align-items: stretch;
   background-color: #ffffff;
   border-radius: 8px;
   margin-top: 145px;
+  width: 1223px;
 }
 input {
   height: 64px;
@@ -73,37 +82,44 @@ input {
   color: #383838;
   border-radius: 8px;
   padding-left: 24px;
+  outline: none;
 }
 input::-webkit-input-placeholder {
   color: #383838;
   font-size: 18px;
 }
-.form__input_label {
+.main-form__form--label {
   position: relative;
 }
-.form-text-input {
-  width: 467px;
+.main-form__form--text {
+  flex-grow: 5;
 }
-.label__text_input {
+.form__input--text {
+  width: 100%;
+}
+.form__label--text {
   position: absolute;
   font-size: 18px;
   top: -44px;
   left: 24px;
 }
-.form-date-input {
+.main-form__form--date {
+  flex-grow: 0.5;
+}
+.form__input--date {
   border: 3px solid #f5bd41;
-  width: 259px;
+  width: 100%;
 }
-.label__date_input {
+.form__label--date {
   position: absolute;
   font-size: 18px;
   top: -44px;
   left: 24px;
 }
-.form-room-input {
-  width: 304px;
+.form__input--room {
+  flex-grow: 1.5;
 }
-.button {
+.form__button {
   background-color: #3077c6;
   font-weight: 500;
   border: none;
@@ -112,48 +128,59 @@ input::-webkit-input-placeholder {
   width: 192px;
   border-radius: 8px;
   font-size: 18px;
+  flex-grow: 0.3;
 }
-.top-section .download {
+.top-section__download {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 17px;
   padding-bottom: 120px;
 }
-.offer .container {
+.offer {
   padding: 120px 0 122px;
 }
-.offer-title {
+.title {
   text-align: center;
 }
-h2 {
+.header {
   font-size: 40px;
   font-weight: 500;
 }
-.offer-title.stripe {
+.offer__header-stripe {
   padding-top: 20px;
 }
-.offer-blocks {
+.row {
   display: flex;
   justify-content: space-between;
+}
+.offer__items {
   align-items: center;
   padding-top: 80px;
   font-size: 24px;
 }
-.block {
+.column {
   display: flex;
   flex-direction: column;
+}
+.offer__items--column {
   justify-content: center;
   align-items: center;
 }
-.image {
+.offer__items--sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.offer__items--icon {
   height: 100px;
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.block .text {
+.offer__items--text {
   padding: 48px 0 8px;
 }
 .footer {
@@ -164,24 +191,20 @@ h2 {
   font-size: 20px;
   color: #ffffff;
 }
-.footer-items {
-  display: flex;
-  justify-content: space-between;
+.footer__items {
   align-items: baseline;
 }
-.item {
-  display: flex;
-  flex-direction: column;
+.footer__items--column {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.footer .bold {
-  font-weight: 500;
-}
-.item div:not(:last-child) {
+.footer__items--column div:not(:last-child) {
   margin-bottom: 24px;
 }
-.footer .rights {
+.footer__items--bold {
+  font-weight: 500;
+}
+.footer__rights {
   padding-top: 64px;
   font-size: 14px;
 }

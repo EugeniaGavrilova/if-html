@@ -9,27 +9,33 @@
     <div class="top-section">
       <div class="container">
         <div class="nav">
-          <div class="logo">
+          <div class="nav__logo">
             <img src="./image/logo-vector.svg" alt="logo" />
           </div>
-          <div>
-            <h3 class="top-section text">Stays</h3>
+          <div class="nav__icons">
+            <div>
+              <h3 class="nav__icons--text">Stays</h3>
+            </div>
+            <div>Attractions</div>
           </div>
-          <div>Attractions</div>
-          <div>
-            <img src="./image/night.svg" alt="nigth mode" />
-          </div>
-          <div>
-            <img src="./image/account-circle.svg" alt="account" />
+          <div class="nav__icons">
+            <div>
+              <img src="./image/night.svg" alt="nigth mode" />
+            </div>
+            <div>
+              <img src="./image/account-circle.svg" alt="account" />
+            </div>
           </div>
         </div>
+        <div class="top-section__info">
+          <div class="top-section__info--text">Discover stays</div>
+          <div class="top-section__info--text">to live, work or just relax</div>
+        </div>
         <div class="main-form">
-          <div class="form-main-text">Discover stays</div>
-          <div class="form-main-text">to live, work or just relax</div>
           <form>
-            <div class="form">
-              <div class="form__input_label">
-                <label class="label__text_input" for="destination"
+            <div class="main-form__form">
+              <div class="main-form__form--label main-form__form--text">
+                <label class="form__label--text" for="destination"
                   >Your destination or hotel name</label
                 >
                 <input
@@ -37,11 +43,11 @@
                   placeholder="New York"
                   name="destination"
                   id="destination"
-                  class="form-text-input"
+                  class="form__input--text"
                 />
               </div>
-              <div class="form__input_label">
-                <label class="label__date_input" for="date"
+              <div class="main-form__form--label main-form__form--date">
+                <label class="form__label--date" for="date"
                   >Check-in — Check-out</label
                 >
                 <input
@@ -49,75 +55,101 @@
                   placeholder="Tue 15 Sept — Sat 19 Sept"
                   name="date"
                   id="date"
-                  class="form-date-input"
+                  class="form__input--date"
                 />
               </div>
               <input
                 name="rooms"
                 placeholder="2 Adults — 0 Children — 1 Room"
                 type="text"
-                class="form-room-input"
+                class="form__input--room"
               />
-              <button type="submit" class="button">Search</button>
+              <button type="submit" class="form__button">Search</button>
             </div>
           </form>
         </div>
-        <div class="top-section download">
-          <div class="google">
+        <div class="top-section__download">
+          <div class="top-section__download--icon">
             <img src="./image/google-play.svg" alt="Google play" />
           </div>
-          <div class="appstore">
+          <div class="top-section__download--icon">
             <img src="./image/app-store.svg" alt="App store" />
           </div>
         </div>
       </div>
     </div>
-    <div class="offer">
-      <div class="container">
-        <div class="offer-title">
-          <h2>What do we offer</h2>
-          <div class="stripe">
-            <img src="./image/stripe.png" alt="stripe" />
-          </div>
+    <div class="offer container">
+      <div class="offer__title title">
+        <h2 class="offer__header header">What do we offer</h2>
+        <div class="offer__header-stripe">
+          <img src="./image/stripe.png" alt="stripe" />
         </div>
-        <div class="offer-blocks">
-          <div class="block">
-            <div class="image">
-              <img src="./image/1.png" alt="Support" />
-            </div>
-            <div class="text">Support 24/7</div>
-          </div>
-          <div class="block">
-            <div class="image">
-              <img src="./image/2.png" alt="Communicate directly" />
-            </div>
-            <div class="text">Communicate directly</div>
-          </div>
-          <div class="block">
-            <div class="image">
-              <img src="./image/3.png" alt="Book online" />
-            </div>
-            <div class="text">Book online</div>
-          </div>
-          <div class="block">
-            <div class="image"><img src="./image/4.png" alt="Review" /></div>
-            <div class="text">Real guest review</div>
-          </div>
+      </div>
+      <div class="offer__items row">
+        <svg class="offer__items--sprite" xmlns="http://www.w3.org/2000/svg">
+          <symbol id="support" viewBox="0 0 76 92">
+            <path
+              d="M67.167 54.333V71h-8.334V54.333h8.334Zm-50 0V71H13a4.179 4.179 0 0 1-4.167-4.167v-12.5h8.334ZM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5Z"
+              fill="#3077C6"
+            />
+          </symbol>
+          <symbol id="communication" viewBox="0 0 84 84">
+            <path
+              d="M54.5 8.667v29.166H13.542l-4.875 4.875V8.667H54.5ZM58.667.333H4.5A4.179 4.179 0 0 0 .333 4.5v58.333L17 46.167h41.667A4.179 4.179 0 0 0 62.833 42V4.5A4.179 4.179 0 0 0 58.667.333ZM79.5 17h-8.333v37.5H17v8.333A4.179 4.179 0 0 0 21.167 67H67l16.667 16.667v-62.5A4.179 4.179 0 0 0 79.5 17Z"
+              fill="#3077C6"
+            />
+          </symbol>
+          <symbol id="book" viewBox="0 0 100 68">
+            <path
+              d="M16.667 9h75V.667h-75C12.083.667 8.333 4.417 8.333 9v45.833H0v12.5h58.333v-12.5H16.667V9Zm79.166 8.333h-25a4.179 4.179 0 0 0-4.166 4.167v41.667a4.179 4.179 0 0 0 4.166 4.166h25A4.179 4.179 0 0 0 100 63.167V21.5a4.179 4.179 0 0 0-4.167-4.167Zm-4.166 37.5H75V25.667h16.667v29.166Z"
+              fill="#3077C6"
+            />
+          </symbol>
+          <symbol id="review" viewBox="0 0 92 84">
+            <path
+              d="M83.5 29.333H57.208l3.959-19.041.125-1.334a6.272 6.272 0 0 0-1.834-4.416L55.042.167 27.625 27.625a8.147 8.147 0 0 0-2.458 5.875v41.667c0 4.583 3.75 8.333 8.333 8.333H71a8.277 8.277 0 0 0 7.667-5.083L91.25 49.042A8.232 8.232 0 0 0 91.833 46v-8.333c0-4.584-3.75-8.334-8.333-8.334ZM83.5 46 71 75.167H33.5V33.5l18.083-18.083-4.625 22.25H83.5V46ZM.167 33.5h16.666v50H.167v-50Z"
+              fill="#3077C6"
+            />
+          </symbol>
+        </svg>
+        <div class="offer__items--column column">
+          <svg class="offer__items--icon">
+            <use href="#support" />
+          </svg>
+          <div class="offer__items--text">Support 24/7</div>
+        </div>
+        <div class="offer__items--column column">
+          <svg class="offer__items--icon">
+            <use href="#communication" />
+          </svg>
+          <div class="offer__items--text">Communicate directly</div>
+        </div>
+        <div class="offer__items--column column">
+          <svg class="offer__items--icon">
+            <use href="#book" />
+          </svg>
+          <div class="offer__items--text">Book online</div>
+        </div>
+        <div class="offer__items--column column">
+          <svg class="offer__items--icon">
+            <use href="#review" />
+          </svg>
+          <div class="offer__items--text">Real guest review</div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-items">
-          <div class="item">
-            <div class="bold">About</div>
+      <div class="footer container">
+        <div class="footer__items row">
+          <div class="footer__items--column column">
+            <div class="footer__items--bold">About</div>
             <div>How Triphouse works</div>
             <div>Careers</div>
             <div>Privacy</div>
             <div>Terms</div>
           </div>
-          <div class="item">
-            <div class="bold">Property types</div>
+          <div class="footer__items--column column">
+            <div class="footer__items--bold">Property types</div>
             <div>Guest houses</div>
             <div>Hostels</div>
             <div>Apartaments</div>
@@ -125,13 +157,15 @@
             <div>Holiday homes</div>
             <div>Hostels</div>
           </div>
-          <div class="item">
-            <div class="bold">Support</div>
+          <div class="footer__items--column column">
+            <div class="footer__items--bold">Support</div>
             <div>Contact Customer Service</div>
             <div>FAQ</div>
           </div>
         </div>
-        <div class="rights">© 2020 Triphouse, Inc. All rights reserved</div>
+        <div class="footer__rights">
+          © 2020 Triphouse, Inc. All rights reserved
+        </div>
       </div>
     </footer>
   </body>
