@@ -81,13 +81,19 @@
   padding-bottom: 120px;
 }
 .main-form__form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 1fr 3fr 1fr;
   align-items: stretch;
   background-color: #ffffff;
   border-radius: 8px;
   margin-top: 145px;
   width: 1230px;
   height: 64px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
 }
 input {
   height: 64px;
@@ -105,9 +111,6 @@ input::-webkit-input-placeholder {
 .main-form__form--label {
   position: relative;
 }
-.main-form__form--text {
-  flex-grow: 5;
-}
 .form__input--text {
   width: 100%;
 }
@@ -117,8 +120,8 @@ input::-webkit-input-placeholder {
   top: -44px;
   left: 24px;
 }
-.main-form__form--date {
-  flex-grow: 0.1;
+.main-form__form--date{
+  display: flex;
   border: 3px solid #f5bd41;
   border-radius: 8px;
 }
@@ -132,9 +135,6 @@ input::-webkit-input-placeholder {
   top: -44px;
   left: 24px;
 }
-.form__input--room {
-  flex-grow: 1.5;
-}
 .form__button {
   background-color: #3077c6;
   font-weight: 500;
@@ -144,7 +144,6 @@ input::-webkit-input-placeholder {
   width: 192px;
   border-radius: 8px;
   font-size: 18px;
-  flex-grow: 0.3;
 }
 .download__icon--svg{
   width: 135px;
