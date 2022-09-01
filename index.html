@@ -7,7 +7,7 @@
     <title>Title</title>
   </head>
   <body>
-    <svg class="offer__items--sprite" xmlns="http://www.w3.org/2000/svg">
+    <svg class="svg__sprite" xmlns="http://www.w3.org/2000/svg">
       <symbol id="support" viewBox="0 0 76 92">
         <path
           d="M67.167 54.333V71h-8.334V54.333h8.334Zm-50 0V71H13a4.179 4.179 0 0 1-4.167-4.167v-12.5h8.334ZM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5Z"
@@ -183,7 +183,7 @@
     </svg>
     <div class="top-section">
       <div class="container">
-        <div class="nav">
+        <div class="nav row">
           <div class="nav__logo">
             <svg class="nav__icons--svg logo">
               <use href="#logo"></use>
@@ -191,10 +191,14 @@
           </div>
           <div class="nav__icons">
             <div class="nav__icons--link">
-              <div>
-                <h3 class="nav__icons--text icons--text">Stays</h3>
+              <div class="nav__links">
+                <div class="nav__icons--text">Stays</div>
+                <div class="nav__icons--active"></div>
               </div>
-              <div class="icons--text">Attractions</div>
+              <div class="nav__links">
+              <div class="nav__icons--text">Attractions</div>
+                <div class="nav__icons--active"></div>
+              </div>
             </div>
             <div class="nav__icons--link">
               <div>
@@ -217,48 +221,48 @@
         <div class="main-form">
           <form>
               <div class="main-form__form">
-                <div class="main-form__form--text main-form__form--label">
-                  <label class="form__label--text" for="destination"
-                    >Your destination or hotel name</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="New York"
-                    name="destination"
-                    id="destination"
-                    class="form__input--text main__form--input"
-                  />
-                </div>
-                <div class="main-form__form--date main-form__form--label main__form--input">
-                  <label class="form__label--date" for="date"
-                    >Check-in — Check-out</label
-                  >
-                  <input
-                    type="date"
-                    placeholder="Tue 15 Sept —"
-                    name="date"
-                    id="date"
-                    class="form__input--date"
-                  />
-                  <div class="form__input--date date-">
-                    &mdash;
+                  <div class="main-form__form--text main-form__form--label">
+                    <label class="form__label--text" for="destination"
+                      >Your destination or hotel name</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="New York"
+                      name="destination"
+                      id="destination"
+                      class="form__input--text main__form--input"
+                    />
+                  </div>
+                  <div class="main-form__form--date main-form__form--label main__form--input">
+                    <label class="form__label--date" for="date"
+                      >Check-in — Check-out</label
+                    >
+                    <input
+                      type="date"
+                      placeholder="Tue 15 Sept —"
+                      name="date"
+                      id="date"
+                      class="form__input--date"
+                    />
+                    <div class="form__input--date date-">
+                      &mdash;
+                    </div>
+                    <input
+                      type="date"
+                      placeholder="Sat 19 Sept"
+                      name="date"
+                      id="date-1"
+                      class="form__input--date"
+                    />
                   </div>
                   <input
-                    type="date"
-                    placeholder="Sat 19 Sept"
-                    name="date"
-                    id="date-1"
-                    class="form__input--date"
+                    name="rooms"
+                    placeholder="2 Adults — 0 Children — 1 Room"
+                    type="text"
+                    class="form__input--room main__form--input"
                   />
-                </div>
-                <input
-                  name="rooms"
-                  placeholder="2 Adults — 0 Children — 1 Room"
-                  type="text"
-                  class="form__input--room main__form--input"
-                />
-                <button type="submit" class="form__button">Search</button>
-            </div>
+                  <button type="submit" class="form__button">Search</button>
+              </div>
           </form>
         </div>
         <div class="top-section__download">
@@ -278,7 +282,7 @@
           <img src="./image/stripe.png" alt="stripe" />
         </div>
       </div>
-      <div class="offer__items row">
+      <div class="offer__items--row">
         <div class="col-3">
           <div class="offer__items--column column">
             <svg class="offer__items--icon">
@@ -316,7 +320,7 @@
     <div class="homes">
     <div class="homes container">
       <div class=" homes__header header title">Homes guests loves</div>
-      <div class="homes__details--row row">
+      <div class="homes__details--row">
         <div class="homes__details--column column">
           <div class="homes__details--image">
             <img alt="Hotel Leopold" src="./image/Rectangle%2048.svg">
@@ -331,26 +335,26 @@
           <div class="homes__details--hotel">Apartment Sunshine</div>
           <div class="homes__details--location">Santa  Cruz de Tenerife, <div>Spain</div> </div>
         </div>
-        <div class="homes__details--column column">
+        <div class="homes__details--column column items__column--none">
             <div class="homes__details--image">
               <img alt="Hotel Leopold" src="./image/Rectangle%2050.svg">
             </div>
           <div class="homes__details--hotel">Villa Kunerad</div>
           <div class="homes__details--location">Vysokie Tatry, Slowakia</div>
           </div>
-        <div class="homes__details--column column">
+        <div class="homes__details--column column items__column--none">
             <div class="homes__details--image">
               <img alt="Hotel Leopold" src="./image/Rectangle%2051.svg">
             </div>
           <div class="homes__details--hotel">Hostel Friendship</div>
           <div class="homes__details--location">Berlin, Germany</div>
         </div>
-        </div>
-        <button class="homes__row--button button">
+        <button class="homes__row--button button__arrow">
           <svg class="homes__row--button-svg" width="9" height="21" viewBox="0 0 9 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92288 7.1 9.21177L0.941176 1" stroke="#383838" stroke-width="2"/>
           </svg>
         </button>
+        </div>
     </div>
     </div>
     <div class="destination">
@@ -367,33 +371,37 @@
             <div class="destination__details--column column">
               <div class="destination__details--svg">
                 <img src="./image/RD1.svg" alt="Maldives">
+                <button class="destination__details--button">Book now</button>
               </div>
               <div class="destination__details--text">Maldives</div>
             </div>
             <div class="destination__details--column column">
               <div class="destination__details--svg">
                 <img src="./image/RD2.svg" alt="Spain">
+                <button class="destination__details--button">Book now</button>
               </div>
               <div class="destination__details--text">Spain</div>
             </div>
             <div class="destination__details--column column">
               <div class="destination__details--svg">
                 <img src="./image/RD3.svg" alt="Norway">
+                <button class="destination__details--button">Book now</button>
               </div>
               <div class="destination__details--text">Norway</div>
             </div>
             <div class="destination__details--column column">
               <div class="destination__details--svg">
                 <img src="./image/RD4.svg" alt="Island">
+                <button class="destination__details--button">Book now</button>
               </div>
               <div class="destination__details--text">Island</div>
             </div>
-          </div>
-        <button class="destination__button button">
-          <svg class="destination__button--svg" width="9" height="21" viewBox="0 0 9 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92288 7.1 9.21177L0.941176 1" stroke="#383838" stroke-width="2"/>
-          </svg>
-        </button>
+          <button class="destination__button button__arrow">
+            <svg class="destination__button--svg" width="9" height="21" viewBox="0 0 9 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92288 7.1 9.21177L0.941176 1" stroke="#383838" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
         <div class="destination__discount">
           <div class="destination__discount--row">
             <div class="destination__discount--icon">
@@ -403,6 +411,9 @@
               <div class="destination__discount--text">Sign up and get 20% off your first booking</div>
               <button class="destination__discount--button">Sign up</button>
             </div>
+            <button class="destination__discount--cancel">
+              <img src="./image/Vector.svg" alt="Cancel" width="26px" height="26px">
+            </button>
           </div>
         </div>
       </div>
@@ -411,72 +422,120 @@
       <div class="review container">
         <div class="review__header header">Guests reviews</div>
         <div class="review__items--row row">
-          <div class="review__items--column column">
-            <div class="review__items--image">
-              <img src="./image/review1.svg" alt="Ubud Bali Resort&SPA">
+          <div class="col-3">
+            <div class="review__items--column column">
+              <div class="review__items--image">
+                <div><img src="./image/review1.svg" alt="Ubud Bali Resort&SPA"></div>
+                <div class="review__image--price">
+                  <div class="review__price--text">From 250 USD</div>
+                </div>
+              </div>
+              <div class="review__items--details row review__details--block">
+                <div class="review__details--location column">
+                  <div class="review__details--location--place">Ubud Bali Resort&SPA</div>
+                  <div class="review__details--location--country">Bali, Indonesia</div>
+                </div>
+                <div class="review__details--score column">
+                  <div class="review__score--number">9,4</div>
+                  <div class="review__score--comment">1324 reviews</div>
+                </div>
+              </div>
+              <div class="review__items--author row review__details--block">
+                <div class="review__author--icon">
+                  <img src="./image/icon--review.svg" alt="icon">
+                </div>
+                <div class="review__author--details column">
+                  <div class="review__author--name">Hanna Ivanova</div>
+                  <div class="review__author--location">🇺🇦 Ukraine</div>
+                </div>
+              </div>
+              <div class="review__items--comment review__details--block">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.</div>
             </div>
-            <div class="review__items--details row review__details--block">
-              <div class="review__details--location column">
-                <div class="review__details--location--place">Ubud Bali Resort&SPA</div>
-                <div class="review__details--location--country">Bali, Indonesia</div>
-              </div>
-              <div class="review__details--score column">
-                <div class="review__score--number">9,4</div>
-                <div class="review__score--comment">1324 reviews</div>
-              </div>
-            </div>
-            <div class="review__items--author row review__details--block">
-              <div class="review__author--icon">
-                <img src="./image/icon--review.svg" alt="icon">
-              </div>
-              <div class="review__author--details column">
-                <div class="review__author--name">Hanna Ivanova</div>
-                <div class="review__author--location">🇺🇦 Ukraine</div>
-              </div>
-            </div>
-            <div class="review__items--comment review__details--block">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.</div>
           </div>
-          <div class="review__items--column column">
-            <div class="review__items--image"></div>
-            <div class="review__items--details row review__details--block">
-              <div class="review__details--location column">
-                <div class="review__details--location--place"></div>
-                <div class="review__details--location--country"></div>
+          <div class="col-3">
+            <div class="review__items--column column items__column--none">
+              <div class="review__items--image">
+                <div><img src="./image/R2.svg" alt="King Kong Hostel"></div>
+                <div class="review__image--price">
+                  <div class="review__price--text">From 40 USD</div>
+                </div>
               </div>
-              <div class="review__details--score column">
-                <div class="review__score--number"></div>
-                <div class="review__score--comment"></div>
+              <div class="review__items--details row review__details--block">
+                <div class="review__details--location column">
+                  <div class="review__details--location--place">King Kong Hostel</div>
+                  <div class="review__details--location--country">Rotterdam, Netherlands</div>
+                </div>
+                <div class="review__details--score column">
+                  <div class="review__score--number">8,9</div>
+                  <div class="review__score--comment">2016 reviews</div>
+                </div>
               </div>
+              <div class="review__items--author row review__details--block">
+                <div class="review__author--icon">
+                  <img src="./image/icon--review.svg" alt="icon">
+                </div>
+                <div class="review__author--details column">
+                  <div class="review__author--name">Adam Smith</div>
+                  <div class="review__author--location">🇺🇸 USA</div>
+                </div>
+              </div>
+              <div class="review__items--comment review__details--block">I've been in this hostel for a month and here is the best hostel of all
+                Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+                Most importantly, those who work here are kind and good-natured.</div>
             </div>
-            <div class="review__items--author row review__details--block">
-              <div class="review__author--icon"></div>
-              <div class="review__author--details column">
-                <div class="review__author--name"></div>
-                <div class="review__author--location"></div>
-              </div>
-            </div>
-            <div class="review__items--comment review__details--block"></div>
           </div>
-          <div class="review__items--column column">
-            <div class="review__items--image"></div>
-            <div class="review__items--details row">
-              <div class="review__details--location column">
-                <div class="review__details--location--place"></div>
-                <div class="review__details--location--country"></div>
+          <div class="col-3">
+            <div class="review__items--column column items__column--none">
+              <div class="review__items--image">
+                <div><img src="./image/R3.svg" alt="Rokoko Hotel"></div>
+                <div class="review__image--price">
+                  <div class="review__price--text">From 100 USD</div>
+                </div>
               </div>
-              <div class="review__details--score column">
-                <div class="review__score--number"></div>
-                <div class="review__score--comment"></div>
+              <div class="review__items--details row review__details--block">
+                <div class="review__details--location column">
+                  <div class="review__details--location--place">Rokoko Hotel</div>
+                  <div class="review__details--location--country">Ourika, Marocco</div>
+                </div>
+                <div class="review__details--score column">
+                  <div class="review__score--number">9,1</div>
+                  <div class="review__score--comment">815 reviews</div>
+                </div>
               </div>
+              <div class="review__items--author row review__details--block">
+                <div class="review__author--icon">
+                  <img src="./image/icon--review.svg" alt="icon">
+                </div>
+                <div class="review__author--details column">
+                  <div class="review__author--name">Anika Messer</div>
+                  <div class="review__author--location">🇩🇪 Germany</div>
+                </div>
+              </div>
+              <div class="review__items--comment review__details--block">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.</div>
             </div>
-            <div class="review__items--author row">
-              <div class="review__author--icon"></div>
-              <div class="review__author--details column">
-                <div class="review__author--name"></div>
-                <div class="review__author--location"></div>
-              </div>
+          </div>
+          <button class="review__button button__arrow">
+            <svg class="homes__row--button-svg" width="9" height="21" viewBox="0 0 9 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92288 7.1 9.21177L0.941176 1" stroke="#383838" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="review__scroll">
+            <div class="review__scroll--active"></div>
+            <div class="review__scroll--active"></div>
+            <div class="review__scroll--active"></div>
+            <div class="review__scroll--active"></div>
+          </div>
+          <div class="review__discount-window">
+            <button class="review__discount--cancel">
+              <img src="./image/Vector.svg" alt="Cancel" class="button__cancel">
+            </button>
+            <div class="review__discount-window--logo">
+              <svg class="logo__svg">
+                <use href="#footer_logo" />
+              </svg>
             </div>
-            <div class="review__items--comment"></div>
+            <div class="review__discount-window--text">Sign up in the app and get 20% off your first booking</div>
+            <button class="review__discount-window--install">Install</button>
           </div>
         </div>
       </div>
